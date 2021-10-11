@@ -12,10 +12,12 @@
   text-overflow:ellipsis;
   white-space:nowrap;
   text-decoration: underline;
+  flex: 9;
 }
 .aricle-date {
   color: #aaa;
   font-size: 26rpx;
   width: 80px;
   text-align: right;
+  flex: 3;
 }
