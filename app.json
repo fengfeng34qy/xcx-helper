@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/study/index",
+    "pages/about/index",
+    "pages/article/index"
+  ],
+  "subPackages": [
+    {
+      "root": "packageA",
+      "pages": [
+        "pages/speech-make/speech-make",
+        "pages/es6/es6",
+        "pages/git/git",
+        "pages/typescript/typescript",
+        "pages/wosa/wosa-error-code",
+        "pages/scan/scan",
+        "pages/device/device",
+        "pages/ss-utils/ss-utils",
+        "pages/device-result/device-result",
+        "pages/md-render/index"
+      ]
+    }
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "自助小帮手",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "./images/icon_component.png",
+        "selectedIconPath": "images/icon_component_HL.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/article/index",
+        "iconPath": "./images/article.png",
+        "selectedIconPath": "images/article_HL.png",
+        "text": "文章"
+      },
+      {
+        "pagePath": "pages/study/index",
+        "iconPath": "./images/icon_qa.png",
+        "selectedIconPath": "images/icon_qa_HL.png",
+        "text": "学习"
+      }
+    ]
+  },
+  "usingComponents": {
+    "towxml": "/towxml/towxml",
+    "tool": "./components/action-tool/action-tool",
+    "input-box": "components/input-box/index",
+    "like-list": "components/like-list/index",
+    "like-comment": "components/like-comment/index",
+    "comment-list": "components/comment-list/index"
+  }
+}

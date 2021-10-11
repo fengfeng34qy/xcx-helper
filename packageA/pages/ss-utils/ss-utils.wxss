@@ -1,0 +1,7 @@
+.utils-box {
+  padding: 60px 20rpx 0;
+}
+.swiper-item {
+  height: 100%;
+  width: 100%;
+}

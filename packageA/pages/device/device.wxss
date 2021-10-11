@@ -1,0 +1,24 @@
+/*!
+ * WeUI v2.3.0 (https://github.com/weui/weui-wxss)
+ * Copyright 2020 Tencent, Inc.
+ * Licensed under the MIT license
+ */
+ /* @import './weui.wxss'; */
+
+page {
+  height: 100%;
+}
+.line-item {
+  border-top: 1rpx solid rgba(0,0,0,.1);
+  background: #fff;
+  width: 100%;
+  padding: 0 16rpx;
+  box-sizing: border-box;
+}
+.item-left {
+  width: 100%;
+}
+.device-item {
+  padding: 20rpx 0;
+}
+ 

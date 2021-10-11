@@ -1,0 +1,10 @@
+<view>
+  <view>
+    <view wx:for="{{deviceList}}" wx:key="*this" class="flex line-item" bindtap="toDevicePage" data-device-id="{{item.link}}">
+      <view class="flex item-left" data-justify-content="space-between">
+        <view class="device-item">{{item.title}}</view>
+        <mp-icon type="outline" icon="arrow" size="{{14}}" color="#aaa"></mp-icon>
+      </view>
+    </view>
+  </view>
+</view>

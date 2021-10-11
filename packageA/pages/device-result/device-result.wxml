@@ -1,0 +1,7 @@
+<view>
+  <view>
+    <!-- <import src="../../../towxml/entry.wxml"/>
+    <template is="entry" data="{{...DeviceMd}}"/> -->
+    <towxml nodes="{{DeviceMd}}"/>
+  </view>
+</view>

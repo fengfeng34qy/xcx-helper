@@ -1,0 +1,50 @@
+<view style="padding:0 24rpx;font-size:14px;">
+  <view style="padding-bottom:10px;">
+    <view class="dir-title">ECMAScript 6 入门</view>
+    <view class="desc">
+      <text>作者：阮一峰 - 非商用</text>
+      <view class="desc-url">https://es6.ruanyifeng.com</view>
+    </view>
+    <view class="flex-wrp" style="flex-direction:column;">
+      <view class="dir-txt" data-name="README" bindtap="getMarkdown">0.前言</view>
+      <view class="dir-txt" data-name="intro" bindtap="getMarkdown">1.ECMAScript 6简介</view>
+      <view class="dir-txt" data-name="let" bindtap="getMarkdown">2.let 和 const 命令</view>
+      <view class="dir-txt" data-name="destructuring" bindtap="getMarkdown">3.变量的解构赋值</view>
+      <view class="dir-txt" data-name="string" bindtap="getMarkdown">4.字符串的扩展</view>
+      <view class="dir-txt" data-name="string-methods" bindtap="getMarkdown">5.字符串的新增方法</view>
+      <view class="dir-txt" data-name="regex" bindtap="getMarkdown">6.正则的扩展</view>
+      <view class="dir-txt" data-name="number" bindtap="getMarkdown">7.数值的扩展</view>
+      <view class="dir-txt" data-name="function" bindtap="getMarkdown">8.函数的扩展</view>
+      <view class="dir-txt" data-name="array" bindtap="getMarkdown">9.数组的扩展</view>
+      <view class="dir-txt" data-name="object" bindtap="getMarkdown">10.对象的扩展</view>
+      <view class="dir-txt" data-name="object-methods" bindtap="getMarkdown">11.对象的新增方法</view>
+      <view class="dir-txt" data-name="symbol" bindtap="getMarkdown">12.Symbol</view>
+      <view class="dir-txt" data-name="set-map" bindtap="getMarkdown">13.Set 和 Map 数据结构</view>
+      <view class="dir-txt" data-name="proxy" bindtap="getMarkdown">14.Proxy</view>
+      <view class="dir-txt" data-name="reflect" bindtap="getMarkdown">15.Reflect</view>
+      <view class="dir-txt" data-name="promise" bindtap="getMarkdown">16.Promise 对象</view>
+      <view class="dir-txt" data-name="iterator" bindtap="getMarkdown">17.Iterator 和 for...of 循环</view>
+      <view class="dir-txt" data-name="generator" bindtap="getMarkdown">18.Generator 函数的语法</view>
+      <view class="dir-txt" data-name="generator-async" bindtap="getMarkdown">19.Generator 函数的异步应用</view>
+      <view class="dir-txt" data-name="async" bindtap="getMarkdown">20.async 函数</view>
+      <view class="dir-txt" data-name="class" bindtap="getMarkdown">21.Class 的基本语法</view>
+      <view class="dir-txt" data-name="class-extends" bindtap="getMarkdown">22.Class 的继承</view>
+      <view class="dir-txt" data-name="module" bindtap="getMarkdown">23.Module 的语法</view>
+      <view class="dir-txt" data-name="module-loader" bindtap="getMarkdown">24.Module 的加载实现</view>
+      <view class="dir-txt" data-name="style" bindtap="getMarkdown">25.编程风格</view>
+      <view class="dir-txt" data-name="spec" bindtap="getMarkdown">26.读懂规格</view>
+      <view class="dir-txt" data-name="async-iterator" bindtap="getMarkdown">27.异步遍历器</view>
+      <view class="dir-txt" data-name="arraybuffer" bindtap="getMarkdown">28.ArrayBuffer</view>
+      <view class="dir-txt" data-name="proposals" bindtap="getMarkdown">29.最新提案</view>
+      <view class="dir-txt" data-name="decorator" bindtap="getMarkdown">30.Decorator</view>
+      <view class="dir-txt" data-name="reference" bindtap="getMarkdown">31.参考链接</view>
+    </view>
+  </view>
+  <view class="top" bindtap="backtop">
+    <image src="./images/png/top.png"></image>
+  </view>
+  <!-- <import src="../../../towxml/entry.wxml"/>
+  <template is="entry" data="{{...article}}"/> -->
+  <towxml nodes="{{article}}"/>
+  <view class="bottom">------ 本节内容你已经看完 ------</view>
+</view>

@@ -1,0 +1,15 @@
+<view>
+  <view wx:if="{{item.state === false ? false : true}}" class="book {{item.state === false ? 'disabled' : ''}}" wx:for="{{bookList}}" bindtap="jumpBookHandler" wx:key="link" hover-class="none" data-name="{{item.link}}" data-link="{{item.link}}" data-state="{{item.state}}">
+    <image class="left" src="{{ item.src }}" mode="widthFix" lazy-load="{{true}}" />
+    <view class="right">
+      <view class="header">
+        <view class="header-icon iconfont mm-book" />
+        <view class="header-state"> {{ item.createTime }} </view>
+      </view>
+      <view class="body">
+        <view class="body-title"> {{ item.bookName }} </view>
+        <view class="body-info"> {{ item.desc }} </view>
+      </view>
+    </view>
+  </view>
+</view>

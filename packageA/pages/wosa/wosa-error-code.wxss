@@ -1,0 +1,10 @@
+.code-item {
+  font-size: 10px;
+}
+.item-indent {
+  text-indent: 1rem;
+}
+.rule-end {
+  text-align: center;
+  color: #ccc;
+}

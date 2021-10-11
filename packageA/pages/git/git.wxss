@@ -1,0 +1,44 @@
+/**pages/index.wxss**/
+
+/**基础风格样式**/
+@import '/towxml/style/main.wxss';
+
+
+/**如果页面有动态主题切换，则需要将使用到的样式全部引入**/
+
+/**主题配色（浅色样式）**/
+@import '/towxml/style/theme/light.wxss';
+
+/**主题配色（深色样式）**/
+@import '/towxml/style/theme/dark.wxss';
+
+.dir-title {
+  text-align: center;
+  margin: 12rpx 0;
+  font-size: 18px;
+}
+.dir-txt {
+  color: #4682BE;
+}
+.dir-txt:active {
+  background: #ccc;
+}
+.top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  opacity: .5;
+}
+.top image {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+.bottom {
+  color: #ccc;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}

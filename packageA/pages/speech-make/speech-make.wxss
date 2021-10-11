@@ -1,0 +1,52 @@
+/**index.wxss**/
+@import "../../../common/lib/weui.wxss";
+
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+
+/* 我自己的样式 */
+textarea {
+  width: 100%;
+  padding: 25rpx 0;
+}
+.textarea-wrp {
+  padding: 0 25rpx;
+  background-color: #fff;
+}
+.page-section {
+  width: 100%;
+}
+
+.section_gap {
+  width: 100%;
+  margin: 1rem 0;
+}
+.page-section-gap {
+  text-align: center;
+}
+.button-sp-area {
+  width: 100%;
+  text-align: center;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+.mini-btn {
+  justify-content: space-around;
+}
+.textarea {
+  height: 60px;
+}
+.head_box {
+  margin: 2.6rem 0;
+}
+.text-wrp {
+  font-size: .9rem;
+  width: 100%;
+}

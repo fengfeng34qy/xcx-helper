@@ -1,0 +1,49 @@
+<view style="padding:0 24rpx;font-size:14px;">
+  <view style="padding-bottom:10px;">
+    <view class="dir-title">git教程</view>
+    <view class="flex-wrp" style="flex-direction:column;">
+      <view class="dir-txt" data-name="basic" bindtap="getMarkdown">基础</view>
+      <view class="dir-txt" data-name="branch" bindtap="getMarkdown">分支</view>
+      <view class="dir-txt" data-name="internal" bindtap="getMarkdown">内部</view>
+      <view class="dir-txt" data-name="operations" bindtap="getMarkdown">操作</view>
+      <view class="dir-txt" data-name="reference" bindtap="getMarkdown">参考</view>
+      <view class="dir-txt" data-name="tag" bindtap="getMarkdown">tag</view>
+      <view class="dir-txt" data-name="commands/git-add" bindtap="getMarkdown">git-add</view>
+      <view class="dir-txt" data-name="commands/git-branch" bindtap="getMarkdown">git-branch</view>
+      <view class="dir-txt" data-name="commands/git-cat-file" bindtap="getMarkdown">git-cat-file</view>
+      <view class="dir-txt" data-name="commands/git-checkout" bindtap="getMarkdown">git-checkout</view>
+      <view class="dir-txt" data-name="commands/git-cherry-pick" bindtap="getMarkdown">git-cherry-pick</view>
+      <view class="dir-txt" data-name="commands/git-clone" bindtap="getMarkdown">git-clone</view>
+      <view class="dir-txt" data-name="commands/git-commit-tree" bindtap="getMarkdown">git-commit-tree</view>
+      <view class="dir-txt" data-name="commands/git-commit" bindtap="getMarkdown">git-commit</view>
+      <view class="dir-txt" data-name="commands/git-diff" bindtap="getMarkdown">git-diff</view>
+      <view class="dir-txt" data-name="commands/git-hash-object" bindtap="getMarkdown">git-hash-object</view>
+      <view class="dir-txt" data-name="commands/git-init" bindtap="getMarkdown">git-init</view>
+      <view class="dir-txt" data-name="commands/git-log" bindtap="getMarkdown">git-log</view>
+      <view class="dir-txt" data-name="commands/git-ls-files" bindtap="getMarkdown">git-ls-files</view>
+      <view class="dir-txt" data-name="commands/git-merge" bindtap="getMarkdown">git-merge</view>
+      <view class="dir-txt" data-name="commands/git-pull" bindtap="getMarkdown">git-pull</view>
+      <view class="dir-txt" data-name="commands/git-rebase" bindtap="getMarkdown">git-rebase</view>
+      <view class="dir-txt" data-name="commands/git-remote" bindtap="getMarkdown">git-remote</view>
+      <view class="dir-txt" data-name="commands/git-reset" bindtap="getMarkdown">git-reset</view>
+      <view class="dir-txt" data-name="commands/git-restore" bindtap="getMarkdown">git-restore</view>
+      <view class="dir-txt" data-name="commands/git-rev-parse" bindtap="getMarkdown">git-rev-parse</view>
+      <view class="dir-txt" data-name="commands/git-revert" bindtap="getMarkdown">git-revert</view>
+      <view class="dir-txt" data-name="commands/git-rm" bindtap="getMarkdown">git-rm</view>
+      <view class="dir-txt" data-name="commands/git-show" bindtap="getMarkdown">git-show</view>
+      <view class="dir-txt" data-name="commands/git-stash" bindtap="getMarkdown">git-stash</view>
+      <view class="dir-txt" data-name="commands/git-switch" bindtap="getMarkdown">git-switch</view>
+      <view class="dir-txt" data-name="commands/git-tag" bindtap="getMarkdown">git-tag</view>
+      <view class="dir-txt" data-name="commands/git-update-index" bindtap="getMarkdown">git-update-index</view>
+      <view class="dir-txt" data-name="commands/git-update-ref" bindtap="getMarkdown">git-update-ref</view>
+      <view class="dir-txt" data-name="commands/git-write-tree" bindtap="getMarkdown">git-write-tree</view>
+    </view>
+  </view>
+  <view class="top" bindtap="backtop">
+    <image src="./images/png/top.png"></image>
+  </view>
+  <!-- <import src="../../../towxml/entry.wxml"/>
+  <template is="entry" data="{{...article}}"/> -->
+  <towxml nodes="{{article}}"/>
+  <view class="bottom">------ 本节内容你已经看完 ------</view>
+</view>

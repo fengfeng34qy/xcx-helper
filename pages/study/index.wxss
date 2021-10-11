@@ -1,0 +1,177 @@
+@import "/res/iconfont.wxss";
+@import "/res/common.wxss";
+
+.book, .movie {
+  padding: 0.6em 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.left {
+  width: 100px;
+  min-width: 100px;
+  max-width: 100px;
+  height: 0; /* 防止加载过程中变形 */
+  border-radius: 2px;
+}
+
+.right {
+  margin-left: 1em;
+  flex-grow: 1;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: small;
+  color: #888;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 0.5em;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.body-title {
+  font-weight: bold;
+  font-size: medium;
+}
+
+.body-alias {
+  font-size: xx-small;
+  color: #aaa;
+}
+
+.body-info {
+  font-size: 26rpx;
+  color: #aaa;
+  overflow: hidden;
+  line-height: 1.5em;
+  max-height: 4.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.body-comment {
+  font-size: medium;
+  line-height: 1.5em;
+  color: #4d4d4d;
+}
+
+.filter {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #f1f1f1;
+  padding: 1px 5%;
+  font-size: small;
+  font-weight: bold;
+  height: 2em;
+}
+
+radio-group {
+  width: 45%;
+}
+
+.filter-bar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.filter label {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1px;
+  color: #1aad19;
+  transition: background-color 0.8s;
+}
+
+radio-group:first-child label:first-child {
+  border-top-left-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+}
+
+radio-group:last-child label:last-child {
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+.filter radio {
+  display: none;
+}
+
+.radio-check {
+  background-color: #f1f1f1;
+}
+
+.radio-uncheck {
+  background-color: white;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.star {
+  color: #ffbe00;
+}
+
+.unstar {
+  color: #aaa;
+}
+
+@media (min-width: 768px) {
+  .left {
+    width: 140px;
+    min-width: 140px;
+    max-width: 140px;
+    height: 0;
+    border-radius: 4px;
+  }
+
+  .header {
+    font-size: medium;
+  }
+
+  .body-title {
+    font-size: large;
+  }
+
+  .body-alias, .body-info {
+    font-size: x-small;
+  }
+
+  .body-comment {
+    font-size: large;
+  }
+
+  .filter {
+    font-size: medium;
+  }
+}
+
+.disabled {
+  filter: grayscale(1);
+}

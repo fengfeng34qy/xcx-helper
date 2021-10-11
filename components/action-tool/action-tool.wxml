@@ -1,0 +1,15 @@
+
+<view>
+  <view hidden="{{ !(showMore) }}" data-wpy-evt="7-6" catch:tap="showMoreBtn" class="mask"></view>
+  <view class="action-tool">
+    <view>
+      <view wx:for="{{ items }}" wx:for-index="index" wx:for-item="item" wx:key="index" key="{{ index }}"  bind:tap="goSend" style="margin-bottom: {{showMore ? 55 : -84}}rpx;" class="btn-circle btn-i">
+        <view class="icon icon-{{item.icon}}"></view>
+        <view hidden="{{ !(showMore) }}" style="opacity: {{showMore ? 1 : 0}};" class="btn-des">{{item.title}}</view>
+      </view>
+    </view>
+    <view data-wpy-evt="7-8" catch:tap="showMoreBtn" class="btn-i">
+      <view style="transform: rotate({{showMore  ? 135 : 0}}deg);" class="icon icon-add"></view>
+    </view>
+  </view>
+</view>

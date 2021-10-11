@@ -1,0 +1,86 @@
+<!--index.wxml-->
+<view class="page" style="font-size:14px;">
+  <view class="container">
+  <!-- 头部 -->
+    <!-- <view class="flex flex-end title">
+      <view style="width:64px;height:64px;padding-left:20px;">
+        <image src="./images/png/ss.png"></image>
+      </view>
+      <view class="title-right">
+      
+      </view>
+    </view> -->
+    <!-- 小贴士 -->
+    <view class="flex tips" style='--marqueeWidth--:{{broadcast_arr.width_mal}}px;'>
+      <view class="middle"><mp-icon type="field" icon="volume-up" size="{{23}}" color="#ff994d"></mp-icon></view>
+      
+      <view class="page-section page-section-spacing swiper flex">
+        <swiper indicator-dots="{{indicatorDots}}" vertical="true" circular="true"
+          autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+          <block wx:for="{{swiperList}}" wx:key="*this">
+            <swiper-item>
+              <view class="swiper-item {{item}}">{{item}}</view>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+
+    </view>
+    <!-- 工具栏容器 -->
+    <view class="utils-wrp">
+      <view class="flex utils_box" data-justify-content="flex-start">
+        <!-- 工具栏-1 -->
+        <view class="column utils_item">
+          <navigator url="/packageA/pages/speech-make/speech-make" class="navigator">
+            <!-- <view class="icon-item"> -->
+              <mp-icon class="container" type="field" icon="mike" size="{{30}}" color="#ff994d"></mp-icon>
+            <!-- </view> -->
+            <text>语音合成</text>
+          </navigator>
+          <!-- <text>语音合成</text> -->
+        </view>
+        <!-- 工具栏-2 -->
+        <view class="column utils_item">
+          <navigator url="/packageA/pages/ss-utils/ss-utils" class="navigator">
+            <mp-icon class="container" type="outline" icon="utils" size="{{30}}" color="#1887fb"></mp-icon>
+            <text>自助工具</text>
+          </navigator>
+        </view>
+        <!-- 工具栏-3 -->
+        <view class="column utils_item">
+          <navigator url="/packageA/pages/device/device" class="navigator">
+            <mp-icon class="container" type="outline" icon="device" size="{{30}}" color="#ff994d"></mp-icon>
+            <text>外设调用</text>
+          </navigator>
+        </view>
+        <!-- 工具栏-4 -->
+        <view class="column utils_item">
+          <navigator url="/packageA/pages/wosa/wosa-error-code" class="navigator">
+            <mp-icon class="container" type="outline" icon="err-code" size="{{30}}" color="#ff994d"></mp-icon>
+            <text>错误码</text>
+          </navigator>
+        </view>
+        <!-- 工具栏-5 -->
+        <view class="column utils_item" bindtap="jumpMarkdownHandler" data-markdown="Linux">
+          <mp-icon class="container" type="outline" icon="linux" size="{{30}}" color="#707070"></mp-icon>
+          <text>linux命令</text>
+        </view>
+        <!-- 工具栏-6 -->
+        <view class="column utils_item" bindtap="jumpAppletHandler">
+          <mp-icon class="container" type="field" icon="like" size="{{30}}" color="#f00"></mp-icon>
+          <text>脱单利器</text>
+        </view>
+        <!-- 工具栏-7 -->
+        <!-- <view class="column utils_item" bindtap="jumpMarkdownHandler" data-markdown="vue">
+          <mp-icon class="container" type="outline" icon="vue" size="{{30}}" color="#41B883"></mp-icon>
+          <text>简易vue.js</text>
+        </view> -->
+      </view>
+    </view>
+  </view>
+  <view>
+    <!-- <import src="../../towxml/entry.wxml"/> -->
+    <!-- <template is="entry" data="{{...article}}"/> -->
+    <towxml nodes="{{article}}"/>
+  </view>
+</view>

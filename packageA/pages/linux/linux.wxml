@@ -1,0 +1,28 @@
+<view style="padding:0 24rpx;font-size:14px;">
+  <view style="padding-bottom:10px;">
+    <view class="dir-title">linux命令大全</view>
+    <view class="flex-wrp" style="flex-direction:column;">
+      <view class="dir-txt" data-name="README" bindtap="getMarkdown">1.1 命令行操作</view>
+      <view class="dir-txt" data-name="intro" bindtap="getMarkdown">1.2 常用命令使用</view>
+      <view class="dir-txt" data-name="let" bindtap="getMarkdown">2.1 cat 命令介绍</view>
+      <view class="dir-txt" data-name="destructuring" bindtap="getMarkdown">2.2 vi 命令介绍</view>
+      <view class="dir-txt" data-name="string" bindtap="getMarkdown">2.3 head 及 tail 命令介绍</view>
+      <view class="dir-txt" data-name="string-methods" bindtap="getMarkdown">3.1 网络配置命令</view>
+      <view class="dir-txt" data-name="regex" bindtap="getMarkdown">3.2 网络操作命令</view>
+      <view class="dir-txt" data-name="number" bindtap="getMarkdown">3.3 常用网络配置文件介绍</view>
+      <view class="dir-txt" data-name="function" bindtap="getMarkdown">3.4 常用网络操作方法</view>
+      <view class="dir-txt" data-name="array" bindtap="getMarkdown">4.1 Linux 下软件包的安装及卸载</view>
+      <view class="dir-txt" data-name="object" bindtap="getMarkdown">4.2 Linux 操作系统的时钟系统</view>
+      <view class="dir-txt" data-name="object-methods" bindtap="getMarkdown">4.3 系统信息及运行状态监控</view>
+      <view class="dir-txt" data-name="symbol" bindtap="getMarkdown">4.4 打包/压缩工具 tar</view>
+      <view class="dir-txt" data-name="set-map" bindtap="getMarkdown">4.5 文件及文件内容的查找</view>
+      <view class="dir-txt" data-name="proxy" bindtap="getMarkdown">4.6 Linux 的系统服务及其配置</view>
+    </view>
+  </view>
+  <view class="top" bindtap="backtop">
+    <image src="./images/png/top.png"></image>
+  </view>
+  <import src="../../../towxml/entry.wxml"/>
+  <template is="entry" data="{{...article}}"/>
+  <view class="bottom">------ 没有更多了 ------</view>
+</view>
