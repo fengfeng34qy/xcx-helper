@@ -141,6 +141,14 @@ module.exports.initToWxml = function(page) {
   };
 }
 
+module.exports.seelp = function(ms) {
+  return new Promise(function(reslove, reject) {
+    setTimeout(function() {
+      reslove(1)
+    }, ms)
+  })
+}
+
 module.exports.getTucaoData = function() {
   let data = null;
   try {

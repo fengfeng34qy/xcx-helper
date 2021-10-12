@@ -14,31 +14,34 @@ Page({
    */
   onLoad: function(options) {
     let _this = this
-    // 注释： onLoad方法真机模式调用云函数报错(MiniProgramError)，暂未找到解决方法
-    wx.showLoading({title: '正在加载...'})
-    wx.cloud.callFunction({
-      name: 'study',
-      data: {},
-      success(res) {
-        console.log('success')
-        _this.setData({
-          bookList: res.result.bookList.data.map(function(item, index) {
-            item.createTime = UTIL.printDateTime(item.createTime);
-            return item;
+    setTimeout(function() {
+      wx.showLoading({title: '正在加载...'})
+      wx.cloud.callFunction({
+        name: 'study',
+        data: {},
+        success(res) {
+          console.log('success')
+          _this.setData({
+            bookList: res.result.bookList.data.map(function(item, index) {
+              item.createTime = UTIL.printDateTime(item.createTime);
+              return item;
+            })
           })
-        })
-      },
-      fail(error) {
-        console.log(error)
-        wx.showToast({
-          title: JSON.stringify(error),
-        })
-      },
-      complete() {
-        console.log('complete')
-        wx.hideLoading()
-      }
-    })
+        },
+        fail(error) {
+          console.log(error)
+          wx.showToast({
+            title: JSON.stringify(error),
+          })
+        },
+        complete() {
+          console.log('complete')
+          wx.hideLoading()
+        }
+      })
+    }, 20);
+    // 注释： onLoad方法真机模式调用云函数报错(MiniProgramError)，暂未找到解决方法
+    
   },
 
   // 跳转书籍
