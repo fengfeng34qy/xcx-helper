@@ -43,7 +43,7 @@
   </view>
   <view wx:if="{{audioPlaySrc}}" class="text-wrp">
     <view><text>语音合成地址:</text></view>
-    <view><text>{{ audioPlaySrc }}</text></view>
+    <view style="overflow:auto"><text>{{ audioPlaySrc }}</text></view>
     <view class="center">
       <button bindtap="copysrcHandler" class="mini-btn" type="primary" size="mini">复制地址</button>
     </view>

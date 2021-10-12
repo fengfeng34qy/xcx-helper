@@ -47,3 +47,11 @@
 .dir-chapter {
   margin: 20rpx 0;
 }
+
+.desc {
+  color: #1aad16;
+  margin-bottom: 18rpx;
+}
+.desc-url {
+  text-decoration: underline;
+}

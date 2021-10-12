@@ -1,6 +1,10 @@
 <view style="padding:0 24rpx;font-size:14px;">
   <view style="padding-bottom:10px;">
     <view class="dir-title">git教程</view>
+    <view class="desc">
+      <text>作者：阮一峰 - 非商用</text>
+      <view class="desc-url">https://github.com/wangdoc/git-tutorial/</view>
+    </view>
     <view class="flex-wrp" style="flex-direction:column;">
       <view class="dir-txt" data-name="basic" bindtap="getMarkdown">基础</view>
       <view class="dir-txt" data-name="branch" bindtap="getMarkdown">分支</view>

@@ -1,9 +1,9 @@
 <view>
-  <view>
+  <view class="page-content">
     <text class="article-header-txt">文章列表</text>
     <view>
-      <view class="aricle-item flex" data-justify-content="space-between" wx:for="{{articleList}}" wx:key="*this" data-page="{{item.page}}" bindtap="jumpMarkdownHandler">
-        <view class="aricle-txt">{{item.title}}</view>
+      <view class="aricle-item flex" data-justify-content="space-between" wx:for="{{articleList}}" wx:key="*this">
+        <view class="aricle-txt" data-page="{{item.page}}" bindtap="jumpMarkdownHandler">{{item.title}}</view>
         <view class="aricle-date">{{item.date}}</view>
       </view>
     </view>

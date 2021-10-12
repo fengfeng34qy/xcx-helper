@@ -1,6 +1,10 @@
 <view style="padding:0 24rpx;font-size:14px;">
   <view style="padding-bottom:10px;">
     <view class="dir-title">typescript教程</view>
+    <view class="desc">
+      <text>作者：xcatliu - 非商用</text>
+      <view class="desc-url">https://github.com/xcatliu/</view>
+    </view>
     <view class="flex-wrp" style="flex-direction:column;">
       <view class="dir-chapter" data-name="introduction/README">1. 简介</view>
       <view class="dir-txt" data-name="introduction/what-is-typescript" bindtap="getMarkdown">1.1 什么是 TypeScript</view>
